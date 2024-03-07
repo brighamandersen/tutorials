@@ -1,0 +1,52 @@
+body {
+  /* background-color: darkorange; */
+  background: radial-gradient(
+    circle,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 254, 0, 1) 20%,
+    rgba(20, 255, 0, 1) 40%,
+    rgba(0, 251, 255, 1) 60%,
+    rgba(1, 0, 255, 1) 80%,
+    rgba(241, 0, 255, 1) 100%
+  );
+}
+
+img {
+  width: 250px;
+}
+
+p {
+  background-color: #bb85bb;
+}
+
+.red {
+  background-color: red;
+}
+
+#second-paragraph {
+  color: white;
+}
+
+.card {
+  background-color: white;
+}
+
+.card p {
+  background-color: lightslategray;
+  color: white;
+  padding: 20px;
+  /* margin: 100px; */
+}
+
+#membership-button {
+  background-color: yellow;
+  padding: 20px;
+  margin: 30px;
+  font-size: x-large;
+  /* border: none; */
+  border-radius: 10px;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  /* text-align: left; */
+}

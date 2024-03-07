@@ -1,0 +1,64 @@
+body {
+  font-family: 'Arial', Helvetica;
+  background: #dec9c1;
+}
+
+.container {
+    display: flex;
+    margin: 5rem 1rem;
+}
+
+.child {
+    flex: 1;
+}  
+
+.card {
+  background-color: white;
+  border: 1px solid gray;
+  margin: 1rem;
+  padding: 2rem;
+}
+
+h1.welcome span {
+  color: #476A83;
+}
+
+img.hikers {
+  width: 80%;
+  padding: 1rem 3rem;
+}
+
+form {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-section {
+  padding: 1rem;
+}
+
+.form-section label {
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.form-section input {
+  font-size: large;
+  background: #ddd;
+  border: none;
+  padding: 1rem;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+}
+
+.form-section button {
+  font-size: large;
+  padding: 1rem;
+  background-color: #9DB6BF;
+}

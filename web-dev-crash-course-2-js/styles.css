@@ -1,0 +1,16 @@
+html,
+body {
+  background: silver;
+  color: black;
+  font-family: cambria;
+}
+
+button {
+  font-size: x-large;
+  border: 3px solid black;
+}
+
+button:hover {
+  font-weight: bold;
+  background: #dfdfdf;
+}

@@ -1,5 +1,7 @@
 ## Web Development Crash Course 1 - HTML & CSS
 
+**Date: August 17, 2021**
+
 [Watch on YouTube!](https://youtu.be/vGIRW00pB9w)
 
 ### Lesson Plan

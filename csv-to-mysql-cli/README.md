@@ -8,7 +8,7 @@ Disclaimer; There are many ways to import a CSV into a MySQL Database. For examp
 
 ## Instructions
 
-### 1. Start MySQL (if you haven't already).
+### 1. Start MySQL.
 
 For most people that command will probably be:
 
@@ -22,7 +22,7 @@ For my case though, since I installed with Mac Homebrew (rather than downloading
 brew services restart mysql
 ```
 
-### 2. (Optional) Make a user (if you haven't already).
+### 2. (Optional) Make a user.
 
 In this tutorial we'll just use the root user for simplicity, but making your own is recommended for security reasons so that you can restrict your permissions and avoid making destructive changes. If you decide to make a user you can run this:
 
@@ -87,7 +87,7 @@ If you re-run the `SHOW TABLES;` command now, you'll notice that `full_grades` n
 
 First run `SELECT * FROM full_grades;`. This command will show what's in our table, and we're running it now just to verify that nothing is in it currently.
 
-Bonus information: This is a SQL query. A SQL query is just a command that you can send to MySQL so you can interact with your database and its tables. This command specifically gets all the columns and rows of our `full_grades` table. Now, if you just want to select a few columns, rather than doing a `*`, you can replace that with a list of the columns you want to return, i.e. `SELECT grade, student_count FROM full_grades;`. If you want to return some specific rows instead of all of them, you can add an a `WHERE` clause, i.e. `SELECT * FROM full_grades WHERE student_count > 10;`, which will only return the rows that have a student_count that is bigger than 10.
+> Bonus information: This is a SQL query. A SQL query is just a command that you can send to MySQL so you can interact with your database and its tables. This command specifically gets all the columns and rows of our `full_grades` table. Now, if you just want to select a few columns, rather than doing a `*`, you can replace that with a list of the columns you want to return, i.e. `SELECT grade, student_count FROM full_grades;`. If you want to return some specific rows instead of all of them, you can add an a `WHERE` clause, i.e. `SELECT * FROM full_grades WHERE student_count > 10;`, which will only return the rows that have a student_count that is bigger than 10.
 
 Now for the <u><b>MOST IMPORTANT COMMAND</b></u> of this tutorial:
 
@@ -101,7 +101,7 @@ IGNORE 1 ROWS;
 
 This command says that we want to load data from a file, then inside quotes we pass the path to our file (Notice here how I used a ~ tilde, that just means the home directory). Then we specify which table we want to load that data into, which for us we want to add it to the `full_grades` table. Now if you open up your `.csv` file in a text editor, you'll notice it's really not a spreadsheet under the hood. Instead, it's just a text file with commas between the cells/entries. What this means is we put `FIELDS TERMINATED BY ','` to let it know that this file uses commas to separate them (there are other characters that could be used instead). Then we see that these fields are enclosed by double quotes and the lines end in new line characters (`\n`). Lastly, `IGNORE 1 ROWS` says not to import the row that has the column names, because we don't want those to show up as normal entries within our table.
 
-Warning: You may get an issue such as "The MySQL server is running with the --secure-file-priv option so it cannot execute this statement secure_file_priv". If that happens, see [this blog post](https://acp8.medium.com/solving-the-mysql-server-is-running-with-the-secure-file-priv-option-so-it-cannot-execute-this-d319de864285). Basically you need to add a `.my.cnf` file that allows you to load files from anywhere.
+> Warning: You may get an issue such as "The MySQL server is running with the --secure-file-priv option so it cannot execute this statement secure_file_priv". If that happens, see [this blog post](https://acp8.medium.com/solving-the-mysql-server-is-running-with-the-secure-file-priv-option-so-it-cannot-execute-this-d319de864285). Basically you need to add a `.my.cnf` file that allows you to load files from anywhere.
 
 Lastly, you can verify that the CSV was successfully imported by running:
 

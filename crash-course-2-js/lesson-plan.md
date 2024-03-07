@@ -79,4 +79,4 @@ Activity - [CodePen - Create a Hero](https://codepen.io/brighambandersen/pen/QWg
 ### Conclusion
 
 - Review concepts
-- By building off these basics, we can make our webpages much more interactable, like this one here: https://codepen.io/wesbos/pen/evsuw?editors=1000
+- By building off these basics, we can make our webpages much more interactable, like [this website](https://codepen.io/wesbos/pen/evsuw?editors=1000).

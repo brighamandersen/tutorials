@@ -1,9 +1,5 @@
 # Intro to Web Dev
 
-### See [GitHub](https://github.com/brighambandersen/wd-crashcourse) for lesson plan and example code
-
-<br>
-
 Websites to showcase:
 
 - [Simple Counter](https://brighambandersen.github.io/simple-counter)

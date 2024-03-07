@@ -4,7 +4,7 @@
 
 [Watch YouTube Tutorial](https://youtu.be/al8g727OOfU)
 
-Disclaimer; There are many ways to import a CSV into a MySQL Database. [This article](https://blog.skyvia.com/how-to-import-csv-file-into-mysql-table-in-4-different-ways/) for example outlines 4 ways you can do this. For our purposes we want to focus on how we can accomplish this without using a GUI. These instructions can all be completed using just your terminal.
+Disclaimer; There are many ways to import a CSV into a MySQL Database. For example, [This article](https://blog.skyvia.com/how-to-import-csv-file-into-mysql-table-in-4-different-ways/) outlines 4 ways you can do this. For our purposes we want to focus on how we can accomplish this without using a GUI. These instructions can all be completed using just your terminal.
 
 ## Instructions
 
@@ -79,17 +79,17 @@ CREATE TABLE IF NOT EXISTS full_grades (
 );
 ```
 
-Okay, let's digest it. We're saying we want to create a new table with the name `full_grades` if one doesn't already exist. If one already exists with that name then this command won't do anything. Inside the parentheses, we're saying what our column names will be. Here we basically just matched the columns with the CSV file for simplicity. Notice how the names are lower_camel_case, with underscores (\_) instead of spaces. This is the typical convention for SQL. Then we have `VARCHAR`. That's basically a string, saying that it can contain not just numbers, but also characters, or a mix of both. The `(100)` is putting a max length on the varchar saying that we can't insert more than 100 characters into an entry of that column. We could have set this to a smaller amount if we wanted to save space and have a smaller database, but we wanted to make sure that it was big enough for even extreme cases. Lastly, the `INT`. If you're familiar with programming this is just an integer. In other words, this column only allows for whole numbers. This is a perfect use case for an integer since it's just a count of students, so there won't be decimals.
+Now let's break it down. We're saying we want to create a new table with the name `full_grades` if one doesn't already exist. If one already exists with that name then this command won't do anything. Inside the parentheses, we're saying what our column names will be. Here we basically just matched the columns with the CSV file for simplicity. Notice how the names are lower_camel_case, with underscores (\_) instead of spaces. This is the typical convention for SQL. Then we have `VARCHAR`. That's basically a string, saying that it can contain not just numbers, but also characters, or a mix of both. The `(100)` is putting a max length on the varchar saying that we can't insert more than 100 characters into an entry of that column. We could have set this to a smaller amount if we wanted to save space and have a smaller database, but we wanted to make sure that it was big enough for even extreme cases. Lastly, the `INT`. If you're familiar with programming this is just an integer. In other words, this column only allows for whole numbers. This is a perfect use case for an integer since it's just a count of students, so there won't be decimals.
 
 If you re-run the `SHOW TABLES;` command now, you'll notice that `full_grades` now appears in the output. That means it was successfully created!
 
-### 7. <b><u>THE BIG STEP</u>: Import .csv file into our MySQL Table!</b>
+### 7. <u>THE BIG STEP</u>: Import .csv file into our MySQL Table!
 
 First run `SELECT * FROM full_grades;`. This command will show what's in our table, and we're running it now just to verify that nothing is in it currently.
 
 Bonus information: This is a SQL query. A SQL query is just a command that you can send to MySQL so you can interact with your database and its tables. This command specifically gets all the columns and rows of our `full_grades` table. Now, if you just want to select a few columns, rather than doing a `*`, you can replace that with a list of the columns you want to return, i.e. `SELECT grade, student_count FROM full_grades;`. If you want to return some specific rows instead of all of them, you can add an a `WHERE` clause, i.e. `SELECT * FROM full_grades WHERE student_count > 10;`, which will only return the rows that have a student_count that is bigger than 10.
 
-Now for the <b>MOST IMPORTANT COMMAND</b> of this tutorial:
+Now for the <u><b>MOST IMPORTANT COMMAND</b></u> of this tutorial:
 
 ```
 LOAD DATA INFILE '~/Downloads/full_grades.csv'

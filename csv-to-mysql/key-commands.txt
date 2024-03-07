@@ -1,0 +1,34 @@
+brew services restart mysql
+		
+mysql.server restart
+
+mysql -u root -p
+
+SHOW DATABASES;
+
+CREATE DATABASE full_grades_db;
+
+SHOW DATABASES;
+
+USE full_grades_db;
+
+SHOW TABLES;
+
+CREATE TABLE IF NOT EXISTS full_grades (
+    quarter VARCHAR(100),
+    course_level VARCHAR(100),
+    course VARCHAR(100),
+    instructor VARCHAR(100),
+    grade VARCHAR(100),
+    student_count INT
+);
+
+SHOW TABLES;
+
+DESCRIBE full_grades;
+
+SELECT * FROM full_grades;
+
+LOAD DATA INFILE '~/Downloads/full_grades.csv'  INTO TABLE full_grades FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n' IGNORE 1 ROWS;
+
+SELECT * FROM full_grades;

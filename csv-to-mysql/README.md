@@ -1,5 +1,9 @@
 # How to Import a CSV into MySQL using CLI for Beginners
 
+**Date: March 6, 2024**
+
+[Watch YouTube Tutorial](https://youtu.be/al8g727OOfU)
+
 Disclaimer; There are many ways to import a CSV into a MySQL Database. [This article](https://blog.skyvia.com/how-to-import-csv-file-into-mysql-table-in-4-different-ways/) for example outlines 4 ways you can do this. For our purposes we want to focus on how we can accomplish this without using a GUI. These instructions can all be completed using just your terminal.
 
 ## Instructions

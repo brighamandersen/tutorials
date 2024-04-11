@@ -1,8 +1,8 @@
 ## Web Development Crash Course 1 - HTML & CSS
 
-![Cover Photo](./cover-photo.png)
-
 **Date: August 17, 2021**
+
+![Cover Photo](./cover-photo.png)
 
 [Watch on YouTube!](https://youtu.be/vGIRW00pB9w)
 

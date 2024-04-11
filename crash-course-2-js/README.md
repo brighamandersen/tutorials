@@ -1,5 +1,7 @@
 ## Web Development Crash Course 2 - JavaScript
 
+![Cover Photo](./cover-photo.png)
+
 **Date: August 24, 2021**
 
 [Watch on YouTube!](https://youtu.be/UJC2Gyaxd_s)

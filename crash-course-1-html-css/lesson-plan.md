@@ -1,5 +1,7 @@
 # Intro to Web Dev
 
+![Cover Photo](./cover-photo.png)
+
 Websites to showcase:
 
 - [Simple Counter](https://brighambandersen.github.io/simple-counter)

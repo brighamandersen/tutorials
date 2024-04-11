@@ -1,5 +1,7 @@
 # Intro to Web Dev 2.0 - JavaScript
 
+![Cover Photo](./cover-photo.png)
+
 ### What is JavaScript?
 
 HTML is the content, CSS is the styling, JS is the interactivity. JS causes things to happen when users interact with a webpage with their mouse and keyboard. JS makes things dynamic (not always the same website every time).

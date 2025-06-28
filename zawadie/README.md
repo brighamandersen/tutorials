@@ -1,5 +1,7 @@
 # zawadie
 
+Notes and example files of my tutoring lessons to the Zawadie Solutions agents – refugees in Malawi. We covered HTML and CSS fundamentals to help with their jobs as front end developers.
+
 ## 2/12/24
 
 A simple intro into what is HTML, what is CSS, what is JavaScript. Showed how to get VS Code and open a project.
